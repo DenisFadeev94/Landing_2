@@ -1,19 +1,15 @@
-@font-face {
-    font-family: "Material Icons";
-    src: url(fonts/MaterialIcons-Regular.eot);
-      src: url(fonts/MaterialIcons-Regular.ijmap);
-        src: url(fonts/MaterialIcons-Regular.woff);
-          src: url(fonts/MaterialIcons-Regular.woff2);
-           src: url(fonts/MaterialIcons-Regular.ttf);
-}
 
-* {
-  padding: 0;
-  margin: 0;
+
+html {
+  /* overflow: hidden; */
 }
 
 body {
   font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -123,8 +119,9 @@ a {
 }
 
 /* work */
-.work {
-  padding-bottom: 70px;
+
+.works__item {
+  padding-bottom: 50px;
 }
 
 .works__image {
@@ -149,12 +146,14 @@ a {
 }
 
 .features__item {
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
-
+.features__item > i {
+  font-size: 70px;
+}
 .features__image {
   padding-right: 40px;
-  max-height: 92px;
+
 }
 
 .features__suptitle{
@@ -172,4 +171,42 @@ a {
 
 .features__frame_two {
   margin: 0 auto;
+}
+
+.advantages {
+  background: #f34235;
+  color: #fff;
+}
+
+.advantages__suptitle {
+  font-size: 45px;
+  padding-top: 130px;
+}
+
+.advantages__title {
+  font-size: 20px;
+}
+
+.advantages__item {
+  padding: 70px 0;
+}
+
+.advantages__item__num {
+  font-size: 45px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 85px;
+  height: 75px;
+  margin: 0 auto;
+  background: #fff;
+  color: #f34235;
+
+}
+
+.advantages__item__name {
+  font-size: 24px;
+}
+
+.advantages__item__text {
+  font-size: 20px;
 }
