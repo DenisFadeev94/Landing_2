@@ -101,7 +101,6 @@ a {
 /* about */
 .about {
   margin-top: 135px;
-  text-align: center;
   line-height: 2;
 }
 
@@ -111,33 +110,49 @@ a {
 
 .about__title {
   font-size: 20px;
+  padding-bottom: 70px;
 }
 
 /* work */
-
-.works {
-  margin-top: 70px;
-}
-
-.works__block {
-
+.work {
+  padding-bottom: 70px;
 }
 
 .works__image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.works__info {
-  padding: 0 40px;
+  padding-right: 30px;
+  max-height: 92px;
 }
 
 .works__title {
-  margin-bottom: 15px;
   font-size: 24px;
+  margin-bottom: 40px;
 }
 
 .works__text {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+/* features */
+
+.features {
+  background: #f1f1f1;
+  padding-top: 135px;
+}
+
+.features__item {
+  padding-bottom: 70px;
+}
+
+.features__image {
+  padding-right: 40px;
+  max-height: 92px;
+}
+
+.features__suptitle{
+  font-size: 45px;
+}
+
+.features__title {
+  font-size: 20px;
+  padding-bottom: 40px;
 }
