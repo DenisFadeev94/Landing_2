@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4a20071d5f.js" crossorigin="anonymous"></script>
   <title>COLORFUL FLAT</title>
 </head>
 
@@ -17,23 +19,56 @@
 
   <!-- header -->
 
+  <!-- <div class="video-bg">
+    <video width="100%" height="auto" controls autoplay="autoplay" loop="loop" preload="auto" poster="images/header-bg.jpg">
+      <source src="headerbg.mp4" type="video/mp4">
+      <source src="headerbg.webm" type="video/webm">
+      <source src="headerbg.ogv" type="video/ogg">
+      <object data="headerbg.swf" type="application/x-shockwave-flash">
+        <param name="movie" value="headerbg.swf">
+      </object>
+    </video>
+  </div> -->
+
+
   <header class="header">
 
-    <div class="header_inner">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="header__logo col-auto"><b>colorful</b> flat</div>
-        <div class="navigation col-auto" id="asd">
-          <a class="header__link" href="#">Home</a>
-          <a class="header__link" href="#">About</a>
-          <a class="header__link" href="#">Our Team</a>
-          <a class="header__link" href="#">FAQ</a>
-          <a class="header__link" href="#">Blog</a>
-          <a class="header__link" href="#">Partners</a>
-          <a class="header__link" id="menu" href="#"></a>
-        </div>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg row ">
 
+      <div class="header__logo  col-sm-10 col-md-10 col-lg-4 col-xl-5"><b>colorful</b> flat</div>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+        <div class="collapse navbar-collapse col-sm-2 col-md-3 col-lg-8 col-xl-7" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link header__link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle header__link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Features</a>
+                <a class="dropdown-item" href="#">Advantages</a>
+                <a class="dropdown-item" href="#">Testimonials</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__link" href="#" tabindex="-1" aria-disabled="true">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__link" href="#FAQ">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__link" href="#Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header__link" href="#Partners">Partners</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
     <div class="header__intro text-center">
       <p class="header__intro_suptitle">The best open page template for</p>
       <p class="header__intro__title">Web Professionals</p>
@@ -54,11 +89,13 @@
         <button class="header__form__input__button" type="button" name="button">Get Started Now!</button>
       </div>
     </div>
+
   </header>
 
 
   <!-- About Us -->
   <div class="Contact">
+    <div id="About"></div>
     <div class="block">
       <div class="about text-center">
         <p class="about__suptitle">About Us</p>
@@ -310,55 +347,57 @@
   </div>
   <!-- testimonials -->
 
-  <!-- Our Team -->
+  <!--  Team -->
 
-  <div class="our__team">
+  <div class="__team">
     <div class="block">
+      <div id="Our_Team"></div>
       <div class="text-center">
         <p class="our__team__suptitle">Our Team</p>
       </div>
-        <div class="row d-flex text-center justify-content-between">
-          <div class="team__item col-md-6 col-lg-3">
-            <img src="images/team/Alan.jpg" alt="">
-            <p class="team__name">Alan Sobakovich</p>
-            <p class="team__profession">Founder</p>
-            <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-          </div>
-
-          <div class="team__item col-md-6 col-lg-3">
-            <img src="images/team/John.jpg" alt="">
-            <p class="team__name">John Mu</p>
-            <p class="team__profession">Product Manager</p>
-            <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-          </div>
-
-          <div class="team__item col-md-6 col-lg-3">
-            <img src="images/team/Melissa.jpg" alt="">
-            <p class="team__name">Melissa Jade</p>
-            <p class="team__profession">Designer</p>
-            <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-          </div>
-
-          <div class="team__item col-md-6 col-lg-3">
-            <img src="images/team/Greg.jpg" alt="">
-            <p class="team__name">Greg Mercury</p>
-            <p class="team__profession">Designer</p>
-            <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-          </div>
+      <div class="row d-flex text-center justify-content-between">
+        <div class="team__item col-md-6 col-lg-3">
+          <img src="images/team/Alan.jpg" alt="">
+          <p class="team__name">Alan Sobakovich</p>
+          <p class="team__profession">Founder</p>
+          <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
         </div>
+
+        <div class="team__item col-md-6 col-lg-3">
+          <img src="images/team/John.jpg" alt="">
+          <p class="team__name">John Mu</p>
+          <p class="team__profession">Product Manager</p>
+          <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+        </div>
+
+        <div class="team__item col-md-6 col-lg-3">
+          <img src="images/team/Melissa.jpg" alt="">
+          <p class="team__name">Melissa Jade</p>
+          <p class="team__profession">Designer</p>
+          <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+        </div>
+
+        <div class="team__item col-md-6 col-lg-3">
+          <img src="images/team/Greg.jpg" alt="">
+          <p class="team__name">Greg Mercury</p>
+          <p class="team__profession">Designer</p>
+          <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Our Team -->
 
-<!-- FAQs -->
-<div class="faq">
-  <div class="block">
-    <div class="text-center">
-      <p class="our__team__suptitle text-center">Our Team</p>
-    </div>
+  <!-- FAQs -->
+  <div class="faq">
+    <div class="block">
+      <div id="FAQ"></div>
+      <div class="text-center">
+        <p class="our__team__suptitle text-center">FAQs</p>
+      </div>
 
-    <div class="faq__group">
-        <div class="row d-flex justify-content-around">
+      <div class="faq__group row justify-content-center">
+        <div class="column">
           <div class="generation1 ">
             <button class="accordion">Tempor incididunt</button>
             <div class="panel">
@@ -379,37 +418,17 @@
               <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
           </div>
-
-          <div class="generation1">
-            <button class="accordion">Eiusmod tempor</button>
+        </div>
+        <div class="column ">
+          <div class="generation1 ">
+            <button class="accordion">Tempor incididunt</button>
             <div class="panel">
               <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
           </div>
 
           <div class="generation1">
-            <button class="accordion">Eiusmod tempor</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-          </div>
-
-          <div class="generation1">
-            <button class="accordion">Eiusmod tempor</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-          </div>
-
-          <div class="generation1">
-            <button class="accordion">Eiusmod tempor</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-          </div>
-
-          <div class="generation1">
-            <button class="accordion">Eiusmod tempor</button>
+            <button class="accordion">Esse cillum</button>
             <div class="panel">
               <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
@@ -422,67 +441,190 @@
             </div>
           </div>
         </div>
+        <div class="column">
+          <div class="generation1 ">
+            <button class="accordion">Tempor incididunt</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+
+          <div class="generation1">
+            <button class="accordion">Esse cillum</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+
+          <div class="generation1">
+            <button class="accordion">Eiusmod tempor</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </div>
-</div>
-<!-- FAQs -->
+  <!-- FAQs -->
 
-<!-- How Its Work -->
-<div class="how_its_work">
-  <div class="block ">
-    <div class=" d-flex justify-content-around">
-      <div class="how_its_work__video col-lg-4">
-        <iframe src="images/video-bg.mp4" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="how_its_work__content col-lg-8">
+  <!-- How Its Work -->
+  <div class="how_its_work">
+    <div class="block">
+
+      <div class="row justify-content-between">
+
+        <div class="how_its_work__video col-md-12 col-lg-12 col-xl-6">
+          <img class="mx-auto d-block img-fluid" src="images/page-1_img10.jpg" alt="">
+        </div>
+
+        <div class="how_its_work__content col-md-12 col-lg-12 col-xl-6">
           <p class="how_its_work__suptitle">How Its Work</p>
           <p class="how_its_work__title">Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est.</p>
-          <p class="how_its_work__text">Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans. Ei vide movet tibique ius, eos vivendo consetetur theophrastus cu. Eum erroribus necessitatibus ne. Eius singulis ea his, debitis nonumes at per  appareat ponderum eos.</p>
+          <p class="how_its_work__text">Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans. Ei vide movet tibique ius, eos vivendo consetetur theophrastus cu. Eum erroribus
+            necessitatibus ne. Eius singulis ea his, debitis nonumes at per appareat ponderum eos.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- How Its Work -->
-<script>
-  var slideIndex = 0;
-  showSlides();
+  <!-- How Its Work -->
 
-  function showSlides() {
+  <!-- Portfolio -->
+  <div class="portfolio">
+    <div class="row justify-content-center">
+      <div class=" portfolio_images">
+        <img class="img-fluid" src="images/portfolio/page-1_img11.jpg" alt="">
+      </div>
+      <div class=" portfolio_images">
+        <img class="img-fluid" src="images/portfolio/page-1_img12.jpg" alt="">
+      </div>
+      <div class=" portfolio_images">
+        <img class="img-fluid" src="images/portfolio/page-1_img13.jpg" alt="">
+      </div>
+      <div class=" portfolio_images">
+        <img class="img-fluid" src="images/portfolio/page-1_img14.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio -->
+
+  <!-- Blog -->
+  <div class="blog">
+    <div class="block">
+      <div id="Blog"></div>
+      <div class="text-center">
+        <p class="blog__suptitle">Latest From the Blog</p>
+        <p class="blog__title">Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="blog__images__one">
+          <img class="img-fluid" src="images/blog/page-1_img15.jpg" alt="">
+        </div>
+        <div class="blog__images">
+          <img class="img-fluid" src="images/blog/page-1_img16.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog -->
+
+  <!-- Our partners -->
+  <div class="partners">
+    <div class="block">
+      <div id="Partners"></div>
+      <div class="text-center">
+        <p class="partners__blog__suptitle">Our partners</p>
+      </div>
+      <div class="partners_img">
+        <div class="row justify-content-center">
+          <div class="partners_images">
+            <img class="img-fluid" src="images/partners/page-1_img17.jpg" alt="">
+          </div>
+          <div class="partners_images">
+            <img class="img-fluid" src="images/partners/page-1_img18.jpg" alt="">
+          </div>
+          <div class="partners_images">
+            <img class="img-fluid" src="images/partners/page-1_img19.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our partners -->
+  <footer class="footer">
+    <!-- Contact us -->
+    <div class="contact">
+      <div class="contact__us text-center">
+        <p class="contact__suptitle">Contact us</p>
+        <p class="contact__address">8901 Marmora Road, Glasgow, D04 89GR</p>
+        <p class="contact__phone"> Telephone: +1 800 603 6035</p>
+
+      </div>
+      <div class="social__network text-center">
+        <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="google" href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" id="#up" class="button__up"><i class="fas fa-caret-up"></i></a>
+      </div>
+
+      <p class="protect text-center">Colorful Flat © 2015. All Rights Reserved</p>
+    </div>
+    <!-- Contact us -->
+
+    <!-- map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d43553.68661464394!2d31.962893861376955!3d46.979264118334164!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1572796979921!5m2!1sru!2sua" width="100%" height="auto" frameborder="0"
+      style="border:0;" allowfullscreen=""></iframe>
+    <!-- <div class="map">
+      <img class="img-fluid map" src="images/map.jpg" alt="">
+      <i class="fas fa-map-marker-alt map__icon"></i>
+      <!-- map -->
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slider");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000);
+    }
+
+
+    // A C A R D I O N
+    var acc = document.getElementsByClassName("accordion");
     var i;
-    var slides = document.getElementsByClassName("slider");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 4000);
-  }
 
-
-  // A C A R D I O N
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
+    for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
-          this.classList.toggle("active_fag");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight){
-              panel.style.maxHeight = null;
-          } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-          }
+        this.classList.toggle("active_fag");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
       });
-  }
-</script>
+    }
+  </script>
 </body>
 
 </html>

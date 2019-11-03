@@ -1,13 +1,7 @@
-html {
-  /* overflow: hidden; */
-}
-
 body {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 a {
@@ -18,32 +12,47 @@ a {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 20px;
 }
+
+.video-bg {
+  position: absolute;
+  }
 
 /* header */
 .header {
+  position: relative;
+  top: 0;
   background: url("../images/header-bg.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
 }
+.header>nav{
+  padding: 60px;
+}
+.navbar {
 
-.header_inner {
-  padding: 3%;
-  color: rgb(255, 255, 255);
   border-bottom: 1px solid #fff;
 }
 
 .header__logo {
-  font-size: 4.0625rem;
+  font-size: 62px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
 }
 
-.header__link {
-  text-decoration: none;
-  margin-left: 50px;
+.nav-item {
+  margin-right: 25px;
+}
+
+.header__link{
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.header__link:hover{
+   text-decoration: none;
 }
 
 .header__link:first-child {
@@ -61,7 +70,7 @@ a {
 }
 
 .header__intro__title {
-  font-size: 7rem;
+  font-size: 112px;
   font-weight: 200;
   margin-bottom: 152px;
 }
@@ -293,9 +302,8 @@ a {
 
 /* FAQs */
 .faq {
-  background: url(../images/faq-bg.jpg)center no-repeat;
-  background-size: auto;
-  /* display: */
+  background: url(../images/faq-bg.jpg)center center no-repeat;
+  background-size: cover;
   padding-bottom: 130px;
 }
 
@@ -305,8 +313,7 @@ a {
 }
 
 .generation1 {
-  margin: 0 15px;
-
+  margin: 0px 8px;
 }
 
 .accordion {
@@ -355,13 +362,9 @@ a {
 }
 
 /* How Its Work  */
-
-.how_its_work__video {
-  margin-right: 35px;
-}
-
 .how_its_work {
   margin-top: 130px;
+  margin-bottom: 125px;
 }
 
 .how_its_work__suptitle {
@@ -375,4 +378,160 @@ a {
 
 .how_its_work__text {
   font-size: 20px;
+}
+
+/* Portfolio */
+/* Blog */
+.blog {
+  background: #f1f1f1;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.blog__suptitle {
+  font-size: 45px;
+}
+
+.blog__title {
+  font-size: 20px;
+}
+
+.blog__images__one {
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Our partners */
+.partners {
+  padding: 130px 0;
+}
+
+.partners_images {
+  margin: 20px 30px;
+}
+
+.partners__blog__suptitle {
+  font-size: 45px;
+}
+
+.partners_img {
+  margin-top: 90px;
+}
+
+/* Contact us */
+.contact {
+  background: #2c2c2c;
+  color: #fff;
+  padding-top: 135px;
+}
+
+.contact__suptitle {
+  font-size: 45px;
+}
+
+.contact__address {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact__phone {
+  font-size: 20px;
+}
+
+.social__network {
+  padding: 70px 0;
+}
+
+.facebook {
+  background: #3b579d;
+  color: #fff;
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.twitter {
+  background: #5ea9dd;
+  color: #fff;
+  border-radius: 50%;
+  padding: 13px
+}
+
+.google {
+  background: #df4a32;
+  color: #fff;
+  border-radius: 50%;
+  padding: 13px
+}
+
+.social__network>a {
+  margin: 0 10px;
+}
+
+.button__up {
+  color: #fff;
+  background: #5dbdfe;
+  border-radius: 50%;
+  padding: 13px;
+  position: absolute;
+  right: 30px;
+}
+
+.social__network>a:hover {
+  color: #fff;
+}
+
+.protect {
+  opacity: 0.2;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+/* map */
+.map {
+  position: relative;
+}
+
+.map__icon {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@media (min-width: 320px) {
+  .header__logo{
+    font-size: 45px;
+  }
+  .header__intro__title{
+    font-size: 50px;
+    font-weight: 500;
+  }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .header__logo{
+    font-size: 45px;
+  }
+  .header__intro__title{
+    font-size: 70px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header__intro__title{
+    font-size: 90px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header__intro__title{
+    font-size: 112px;
+  }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) {
+
 }
